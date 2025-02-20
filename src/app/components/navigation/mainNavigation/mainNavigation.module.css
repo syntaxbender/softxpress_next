@@ -1,0 +1,112 @@
+/* Ana konteyner stilleri */
+.headerMenu {
+  /* HeaderMenu özel stilleri buraya */
+}
+
+/* NAVIGATION */
+.mainNav {
+  display: flex;
+  justify-content: right;
+}
+
+/* MENÜ BUTONLARI */
+.mainNavMenuButton > a {
+  color: var(--main-light-blue);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    height 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.mainNavMenuButton > a:hover {
+  background-color: var(--main-orange);
+  color: var(--white);
+}
+
+/* STICKY HEADER */
+.mainNavMenuButtonSticky > a {
+  height: 80px;
+}
+
+/* ALT MENÜ İKONLARI */
+.mainNavMenuButtonHasSub > a > svg {
+  transition: color .2s ease;
+  /* font-family: FontAwesome;
+  content: ""; */
+  font-size: 12px;
+  color: var(--main-light-blue);
+  padding-left: 3px;
+
+  /* transition: color 0.2s ease;
+  /* font-family: :global(FontAwesome); */
+  /* content: '\f107';
+  font-size: 12px;
+  color: var(--main-light-blue);
+  padding-left: 3px; */ 
+}
+
+.mainNavMenuButtonHasSub > a:hover > svg {
+  color: #fff;
+}
+
+/* ALT MENÜ ELEMENTLERİ */
+.mainNavSubButton a {
+  background: var(--white);
+  display: block;
+  font-size: 16px;
+  min-width: 200px;
+  padding: 15px 25px 15px 15px;
+  border-bottom: 1px solid #00000012;
+  color: var(--main-light-blue);
+  transition:
+    color 0.2s ease,
+    padding 0.2s ease;
+  white-space: nowrap;
+}
+
+.mainNavSubButton a:hover {
+  color: #ff511a !important;
+  padding: 15px 15px 15px 25px;
+}
+
+/* ALT MENÜ KONTEYNERİ */
+.mainNavMenuButtonHasSub {
+  position: relative;
+}
+
+.mainNavSubContainer {
+  position: absolute;
+  left: 0px;
+  z-index: 999;
+  box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 9%);
+  transform-origin: 0 0 0;
+  transform: translateY(+2em);
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  top: 100px;
+  border: 1px solid #00000012;
+}
+
+.mainNavSubContainerSticky {
+  top: 80px;
+}
+
+.mainNavMenuButtonHasSub:hover .mainNavSubContainer {
+  opacity: 1;
+  visibility: visible;
+  background-color: var(--white);
+  transform: translateY(0%);
+}
+@media (max-width: 992px) {
+  .mainNav {
+      display: none;
+  }
+}

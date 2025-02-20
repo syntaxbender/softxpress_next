@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "checkJs": true,  // JavaScript dosyalarında tip kontrolü yapar
+    "jsx": "react",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@pub/*": ["./public/*"]
+    }
+  }
+}

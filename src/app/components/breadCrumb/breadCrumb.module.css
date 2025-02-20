@@ -1,0 +1,75 @@
+.containerBread {
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  align-items: center;
+}
+
+.breadcrumb div.active a {
+  font-weight: 800;
+}
+
+.breadcrumb div a {
+  font-size: 14px;
+  transition: color 0.3s ease 0s;
+  color: var(--main-light-blue);
+}
+
+.breadcrumb div a:hover {
+  color: #ff511a;
+}
+
+
+/* .pageHeadingOverlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.pageHeading {
+  margin-top: 150px;
+  position: relative;
+  padding: 20px 0px;
+  text-align: center;
+  /* box-shadow: 10px 10px 30px -10px #0000007a; */
+}
+
+.pageHeading h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.breadcrumbHomeIcon {
+  font-size: 21px !important;
+  margin-bottom: 5px !important;
+}
+
+.breadcrumb div svg {
+  color: var(--main-light-blue);
+  font-size: 14px;
+  margin-bottom: 4px;
+
+}
+
+@media (max-width: 992px) {
+  .pageHeading {
+    margin-top: 100px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    overflow: auto;
+  }
+
+  .breadcrumb div a {
+    text-wrap: nowrap;
+  }
+}

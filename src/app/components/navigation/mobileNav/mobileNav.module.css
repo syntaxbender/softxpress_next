@@ -1,0 +1,129 @@
+.mobileNav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  height: calc(100vh - 100px);
+  left: 0;
+  right: 0;
+  top: 100px;
+  background: var(--white);
+  padding: 50px;
+  transition: all 0.3s ease;
+  overflow: auto;
+}
+
+.mobileSubContainer {
+  display: none;
+}
+
+.mobileSubContainerActive {
+  display: block;
+}
+
+.mobileSubButton a {
+  font-size: 18px;
+  color: var(--main-light-blue);
+  padding: 20px 0;
+  font-weight: 600;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  text-align: left;
+  padding-left: 30px;
+}
+.mobileMenuButton{
+  position: relative;
+}
+.mobileMenuButton a,
+.mobileMenuButton div {
+  font-size: 20px;
+  color: var(--main-light-blue);
+  padding: 20px 0;
+  font-weight: 700;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  text-align: left;
+}
+.mobileMenuButton svg{
+  position: absolute;
+  right:20px;
+  top:25px;
+  transition: transform 0.2s ease; 
+  font-size:18px;
+  color: var(--main-light-blue);
+}
+.mobileNavTriggerActive .mobileNavTriggerInner {
+  background: transparent;
+}
+
+.mobileNavTriggerActive .mobileNavTriggerInner::before {
+  width: 30px;
+  transform: translateY(6px) translateX(1px) rotate(45deg);
+}
+
+.mobileNavTriggerActive .mobileNavTriggerInner::after {
+  width: 30px;
+  transform: translateY(-6px) translateX(1px) rotate(-45deg);
+}
+
+.mobileNavTrigger {
+  cursor: pointer;
+  position: absolute;
+  bottom: 33px;
+  right: 20px;
+  top: 40px;
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  display: none;
+}
+
+.mobileNavTriggerInner,
+.mobileNavTriggerInner::before,
+.mobileNavTriggerInner::after {
+  transition: all 0.4s;
+  height: 2px;
+  background-color: var(--main-light-blue);
+}
+
+.mobileNavTriggerInner::before,
+.mobileNavTriggerInner::after {
+  content: ' ';
+  width: 23px;
+  left: 0px;
+  position: absolute;
+  display: block;
+  background-color: var(--main-light-blue);
+}
+
+.mobileNavTriggerInner::before {
+  transform-origin: 33% 100%;
+  top: 0px;
+  z-index: 10;
+}
+
+.mobileNavTriggerInner::after {
+  transform-origin: 33% 0;
+  top: 20px;
+}
+.navActive {
+  visibility: visible;
+  opacity: 1;
+}
+.iconActive{
+  transform:rotate(90deg);
+}
+@media (max-width: 992px) {
+
+  .mobileNavSticky {
+    top: 80px;
+    height: calc(100vh - 80px);
+  }
+  .mobileNavTriggerSticky{
+    top: 30px;
+
+  }
+  .mobileNavTrigger{
+    display: block;
+  }
+}

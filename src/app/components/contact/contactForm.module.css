@@ -1,0 +1,49 @@
+.contactFormSection {
+  box-shadow: 0px 15px 60px -10px rgb(109 117 143 / 33%);
+  padding: 60px 80px;
+  border-radius: 10px;
+}
+
+.contactFormHeading h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #2b306b;
+  margin: 15px 0px;
+}
+
+.contactFormHeading h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ff511a;
+  margin: 15px 0px;
+}
+
+.contactFormContainer input,
+.contactFormContainer textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--main-dark-blue);
+  transition: border 0.3s ease;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+.contactFormContainer textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contactFormContainer input:focus,
+.contactFormContainer textarea:focus {
+  border-bottom: 2px solid var(--main-orange);
+}
+
+@media (max-width: 767px) {
+  .contactFormSection {
+    margin-top: 50px;
+    padding: 50px;
+  }
+}

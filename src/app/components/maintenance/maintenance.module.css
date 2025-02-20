@@ -1,0 +1,35 @@
+.maintenance{
+  margin-bottom:120px;
+}
+.maintenance h1 {
+  color: var(--bright-orange);
+  font-size: 150px;
+  font-weight: 900;
+  text-align: center;
+  margin: 80px 0px 0px 0px;
+  text-shadow: 3px 5px 2px #3333;
+}
+
+.maintenance p {
+  text-align: center;
+}
+
+.headerBottom {
+  color: var(--main-dark-blue);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.maintenanceImg {
+  width: 500px;
+  height: auto;
+  margin: 0px auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .maintenanceImg {
+    width: 100%;
+    height: auto;
+  }
+}

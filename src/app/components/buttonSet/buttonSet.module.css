@@ -1,0 +1,42 @@
+.buttonSet {
+  outline: none;
+  border: none;
+  /* font-size: 16px; */
+  /* color: #fff;
+  background-color: #ff511a; */
+  color: #fff;
+  /* padding: 15px 55px; */
+  display: inline-block;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  background: var(--main-orange);
+  /* background: linear-gradient(225deg, rgb(255 0 157) 0%, rgb(63 0 255) 100%); */
+  box-shadow: 0px 10px 30px -10px #ffffff40;
+  padding: 12px 55px;
+  font-size: 18px;
+}
+
+.mini{
+  font-size: 14px;
+  color: #fff;
+  background: var(--main-orange);
+  padding: 12px 30px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  border: none;
+  transition: all .3s;
+}
+.bright{
+  background: var(--bright-orange);
+}
+.square{
+  border-radius: 5px;
+}
+.buttonSet:hover {
+  opacity: 0.9;
+}

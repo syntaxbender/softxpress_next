@@ -1,0 +1,89 @@
+/* styles/header.module.css */
+.headerArea {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.headerTop {
+  background: #ff6e00;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.headerTopContainer {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.headerTopInfo {
+  display: flex;
+  gap: 30px;
+}
+
+.headerTopEmail,
+.headerTopPhone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 17px;
+  height: 50px;
+}
+
+.logoContainer {
+  transition: height 0.3s ease;
+}
+
+.logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+/* Sticky Header Styles */
+.headerSticky {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 30px 0px #0000000a;
+}
+
+.headerSticky .logo {
+  height: 80px;
+}
+
+@media (max-width: 767px) {
+  .logoContainer {
+    width: max-content;
+  }
+
+  .headerArea {
+    /* background-color: #f7f7f7; */
+    padding: 0px 15px;
+    /* height: 100px; */
+    box-shadow: none;
+    /* text-align: center; */
+  }
+
+  /* .header-area.header-area.header-sticky {} */
+
+  .headerArea :global(.container) {
+    padding: 0px;
+  }
+}

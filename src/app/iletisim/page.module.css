@@ -1,0 +1,53 @@
+.contactsSection {
+  margin: 100px 0px;
+}
+
+
+.contactDescription .contactTitle {
+  color: var(--main-orange);
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+  margin: 0px 0px 40px 0px;
+}
+
+.contactDescription .contactTitle::after {
+  width: 100px;
+  height: 4px;
+  background: var(--main-orange);
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: -20px;
+}
+
+.contactDetails .contactDetail {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.contactDetailContainer .contactDetailHead h4 {
+  color: var(--main-dark-blue);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 5px 0px;
+}
+
+.contactDetailContainer .contactDetailText p {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.contactDetailImage {
+  background: var(--main-orange);
+  font-size: 25px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 999px;
+}
